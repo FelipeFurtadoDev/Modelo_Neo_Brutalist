@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PERSONALIZE: título e descrição -->
+  <title>Bloco · Modelo demonstrativo de site institucional</title>
+  <meta name="description" content="Modelo demonstrativo neo-brutalista de site institucional para negócios locais. Conteúdo entre colchetes é espaço reservado.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#FFD60A">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <p class="demo-banner">Modelo demonstrativo: empresa e informações fictícias.</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Bloco, ir para o início">
+        <span class="brand-mark" aria-hidden="true"></span>BLOCO
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      <nav id="menu-principal" class="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a class="btn btn-azul" href="#contato" data-whatsapp>Falar agora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <p class="etiqueta">[Segmento] · [Cidade/UF]</p>
+          <!-- PERSONALIZE: frase principal -->
+          <h1>O que você faz bem, <span class="gigante">em letras grandes.</span></h1>
+          <p class="lead">Texto de apoio em duas frases: o que o negócio oferece, para quem e qual é o próximo passo. Substitua pelo texto real.</p>
+          <div class="botoes">
+            <a class="btn btn-preto btn-grande" href="#contato" data-whatsapp>Pedir orçamento</a>
+            <a class="btn btn-branco btn-grande" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+        <figure class="hero-fig">
+          <span class="forma estrela" aria-hidden="true"></span>
+          <span class="selo" aria-hidden="true">Modelo<br>demo<br>★</span>
+          <!-- PERSONALIZE: troque o <svg> por
+               <img src="img/hero.jpg" alt="Descrição" width="800" height="900" fetchpriority="high">
+               (a imagem da primeira dobra NÃO usa lazy) -->
+          <svg class="ph" viewBox="0 0 800 900" width="800" height="900" role="img" aria-label="Espaço reservado para foto principal">
+            <rect width="800" height="900" fill="#1F3FFF"/>
+            <circle cx="520" cy="340" r="220" fill="#FFD60A" stroke="#0A0A0A" stroke-width="10"/>
+            <rect x="70" y="560" width="400" height="220" fill="#FFFBEF" stroke="#0A0A0A" stroke-width="10"/>
+            <text x="100" y="660" font-family="Arial,sans-serif" font-size="34" font-weight="900" fill="#0A0A0A">FOTO PRINCIPAL</text>
+            <text x="100" y="710" font-family="Arial,sans-serif" font-size="26" fill="#0A0A0A">800 × 900 px</text>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAIXA EM MOVIMENTO (opcional: apague a <div class="marquee"> inteira para remover) -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-trilho">
+        <span>[Palavra 1] ★ [Palavra 2] ★ [Palavra 3] ★ [Palavra 4] ★ </span>
+        <span>[Palavra 1] ★ [Palavra 2] ★ [Palavra 3] ★ [Palavra 4] ★ </span>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section sobre">
+      <div class="container sobre-grid">
+        <h2 class="sobre-titulo" data-reveal>QUEM<br>SOMOS<span class="seta" aria-hidden="true">→</span></h2>
+        <figure class="sobre-fig" data-reveal>
+          <!-- PERSONALIZE: <img src="img/sobre.jpg" alt="..." width="800" height="600" loading="lazy"> -->
+          <svg class="ph" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Espaço reservado para foto da empresa ou equipe">
+            <rect width="800" height="600" fill="#FFD60A"/>
+            <rect x="60" y="60" width="680" height="480" fill="none" stroke="#0A0A0A" stroke-width="10"/>
+            <text x="100" y="320" font-family="Arial,sans-serif" font-size="34" font-weight="900" fill="#0A0A0A">FOTO DA EMPRESA · 800 × 600 px</text>
+          </svg>
+        </figure>
+        <div class="sobre-texto" data-reveal>
+          <p class="etiqueta etiqueta-azul">Sobre</p>
+          <p>[Parágrafo 1: conte quem é o negócio, o que oferece e qual é a proposta. Use só informações verdadeiras e comprováveis.]</p>
+          <p>[Parágrafo 2: explique como o trabalho é feito e o que o cliente pode esperar.]</p>
+          <p class="nota">Onde atendemos: [cidade, região ou modalidade]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS: para adicionar, copie um <li class="serv">. Para remover, apague.
+         Classes "g4" (largo) e "g2" (estreito) controlam a largura no desktop. -->
+    <section id="servicos" class="section servicos">
+      <div class="container">
+        <h2 data-reveal>Serviços <span class="etiqueta">[ou produtos]</span></h2>
+        <ol class="serv-grade">
+          <li class="serv g4 azul" data-reveal>
+            <span class="num" aria-hidden="true">01</span>
+            <h3>[Serviço 1]</h3>
+            <p>[Descrição curta em uma ou duas frases.]</p>
+            <a class="link" href="#contato" data-whatsapp>Saber mais<span class="sr-only"> sobre o serviço 1</span></a>
+          </li>
+          <li class="serv g2 branco" data-reveal>
+            <span class="num" aria-hidden="true">02</span>
+            <h3>[Serviço 2]</h3>
+            <p>[Descrição curta.]</p>
+            <a class="link" href="#contato" data-whatsapp>Saber mais<span class="sr-only"> sobre o serviço 2</span></a>
+          </li>
+          <li class="serv g2 branco" data-reveal>
+            <span class="num" aria-hidden="true">03</span>
+            <h3>[Serviço 3]</h3>
+            <p>[Descrição curta.]</p>
+            <a class="link" href="#contato" data-whatsapp>Saber mais<span class="sr-only"> sobre o serviço 3</span></a>
+          </li>
+          <li class="serv g4 amarelo" data-reveal>
+            <span class="num" aria-hidden="true">04</span>
+            <h3>[Serviço 4]</h3>
+            <p>[Descrição curta. Aqui cabe uma imagem opcional: &lt;img ... loading="lazy"&gt;.]</p>
+            <a class="link" href="#contato" data-whatsapp>Saber mais<span class="sr-only"> sobre o serviço 4</span></a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS (3 a 4 linhas; só informações comprováveis) -->
+    <section id="diferenciais" class="section diferenciais">
+      <div class="container">
+        <h2 data-reveal>Por que <span class="gigante">Bloco?</span></h2>
+        <ol class="dif">
+          <li data-reveal><span class="dif-num" aria-hidden="true">1</span><h3>[Diferencial 1]</h3><p>Uma frase sobre por que isso importa ao cliente.</p></li>
+          <li data-reveal><span class="dif-num" aria-hidden="true">2</span><h3>[Diferencial 2]</h3><p>Uma frase sobre por que isso importa ao cliente.</p></li>
+          <li data-reveal><span class="dif-num" aria-hidden="true">3</span><h3>[Diferencial 3]</h3><p>Uma frase sobre por que isso importa ao cliente.</p></li>
+          <li data-reveal><span class="dif-num" aria-hidden="true">4</span><h3>[Diferencial 4 · opcional]</h3><p>Uma frase sobre por que isso importa ao cliente.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DESTAQUE: troque pelo item, projeto ou mensagem principal -->
+    <section class="destaque" aria-labelledby="t-destaque">
+      <div class="container destaque-inner">
+        <span class="forma estrela estrela-d" aria-hidden="true"></span>
+        <p class="etiqueta etiqueta-amarela">Em destaque</p>
+        <h2 id="t-destaque" data-reveal>[ITEM EM DESTAQUE]</h2>
+        <p class="destaque-texto">[Explique em poucas linhas por que este item merece atenção agora.]</p>
+        <a class="btn btn-amarelo btn-grande" href="#contato" data-whatsapp>Falar sobre este destaque</a>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA (OPCIONAL: apague esta <section> para remover) -->
+    <section id="como-funciona" class="section">
+      <div class="container">
+        <h2 data-reveal>Como funciona</h2>
+        <ol class="etapas">
+          <li data-reveal><h3>[Etapa 1]</h3><p>[Ex.: primeiro contato.]</p></li>
+          <li data-reveal><h3>[Etapa 2]</h3><p>[Ex.: proposta ou horário.]</p></li>
+          <li data-reveal><h3>[Etapa 3]</h3><p>[Ex.: execução ou entrega.]</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+      <div class="container faq-grid">
+        <h2 data-reveal>Dúvidas?</h2>
+        <div class="faq-lista">
+          <details>
+            <summary>Como peço orçamento ou agendo?</summary>
+            <p>Pelos botões de WhatsApp. A mensagem inicial é neutra e você não precisa enviar dados pessoais para começar.</p>
+          </details>
+          <details><summary>Quais as formas de pagamento?</summary><p>[Descrever formas e condições.]</p></details>
+          <details><summary>Qual o prazo de atendimento ou entrega?</summary><p>[Descrever como os prazos são combinados.]</p></details>
+          <details><summary>Atendem na minha região?</summary><p>[Descrever áreas atendidas e se há atendimento on-line.]</p></details>
+          <details><summary>Qual o horário de funcionamento?</summary><p>[Descrever dias e horários.]</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="contato" class="cta">
+      <div class="container cta-inner">
+        <h2>VAMOS<br><span class="gigante">CONVERSAR?</span></h2>
+        <p>Peça um orçamento, tire dúvidas ou combine um horário.</p>
+        <a class="btn btn-amarelo btn-grande" href="#contato" data-whatsapp>Chamar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <p id="aviso" class="aviso" role="status" aria-live="polite"></p>
+
+  <!-- RODAPÉ: PERSONALIZE todos os dados -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><p class="footer-marca">BLOCO</p><p>[Descrição breve do negócio.]</p></div>
+      <nav aria-label="Rodapé">
+        <h2 class="footer-titulo">Navegação</h2>
+        <ul>
+          <li><a href="#inicio">Início</a></li><li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li><li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-titulo">Contato</h2>
+        <ul><li>[Endereço]</li><li>[Telefone]</li><li>[E-mail]</li><li>[Horário de funcionamento]</li></ul>
+      </div>
+      <div>
+        <h2 class="footer-titulo">Redes</h2>
+        <ul><li>[Rede social 1]</li><li>[Rede social 2]</li></ul>
+      </div>
+    </div>
+    <div class="container footer-base"><p>Modelo demonstrativo com empresa fictícia. Não coleta dados nem usa rastreadores.</p></div>
+  </footer>
+</body>
+</html>
